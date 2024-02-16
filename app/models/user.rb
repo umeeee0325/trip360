@@ -5,6 +5,7 @@ class User < ApplicationRecord
   belongs_to :gender
   belongs_to :age
   belongs_to :residence
+  has_many :tweets
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
