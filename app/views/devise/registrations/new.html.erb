@@ -39,9 +39,15 @@
         <%= f.collection_select(:age_id, Age.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
       </div>
 
+      <div class="field">
+        <%= f.label :"プロフィール" %><br />
+        <%= f.text_area :profile, class:"input-default", id:"password", placeholder:"旅する大学生！" %>
+      </div>
+
       <div class="actions">
         <%= f.submit "ログイン" %>
       </div>
+
     <% end %>
   </div>
 </div>
